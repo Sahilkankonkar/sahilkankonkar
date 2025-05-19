@@ -29,3 +29,13 @@ CREATE TABLE Camp_Attendance (
     FOREIGN KEY (CamperID) REFERENCES Campers(CamperID),
     FOREIGN KEY (CampID) REFERENCES Camps(CampID)
 );
+
+
+
+-- Query to Count Lakshmi’s Visits in Last 3 Years--
+SELECT COUNT(*) AS VisitsInLast3Years
+FROM Camp_Attendance ca
+JOIN Campers c ON ca.CamperID = c.CamperID
+WHERE c.FirstName = 'Lakshmi'
+  AND ca.VisitDate >= CURRENT_DATE - INTERVAL '3 years';
+
