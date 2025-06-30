@@ -8,7 +8,7 @@ public class Main {
         int a = sc.nextInt();   
 
         // If input is even, reduce it by 1
-        if (a % 2 == 0) {  
+        if (a % 2 == 0) {   
             a -= 1;       
         }
 
