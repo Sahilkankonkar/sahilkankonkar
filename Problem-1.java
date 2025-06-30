@@ -43,7 +43,6 @@ public class Main {
         String op = sc.next();
 
         Calculator calc = new Calculator(a, b);
-
         switch (op) {
             case "add":
                 System.out.println("Result: " + calc.add());
