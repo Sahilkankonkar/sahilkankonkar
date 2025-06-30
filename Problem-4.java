@@ -13,7 +13,7 @@ public class Main {
             countMap.put(i, 0);
         }
 
-        // Count how many numbers are divisible by 1 to 9
+        // Count how many numbers are divisible by 1 to 9 
         for (int i = 1; i <= 9; i++) {
             for (int num : numbers) {
                 if (num % i == 0) {
