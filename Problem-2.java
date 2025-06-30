@@ -7,7 +7,7 @@ public class Main {
         System.out.print("Enter a number (a): ");
         int a = sc.nextInt();
 
-        int num = 1; // First odd number
+        int num = 1; // First odd number 
 
         for (int i = 0; i < a; i++) {
             System.out.print(num);
